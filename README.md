@@ -1,0 +1,1 @@
+# panda-sql-study-group-2026
