@@ -1,6 +1,6 @@
-# 📘 Semana 1 – Introdução ao SQL e ao Ambiente
+# Semana 1 – Introdução ao SQL e ao Ambiente
 
-## 📌 Explicação da semana
+## Explicação da semana
 
 Nesta primeira semana, o objetivo é construir a base necessária para todo o minicurso: entender **o que é SQL**, como funcionam os **bancos de dados relacionais** e preparar o ambiente para as próximas análises.
 
