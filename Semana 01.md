@@ -27,7 +27,7 @@ Além disso, foi introduzido o **SQL (Structured Query Language)**, a linguagem 
 
 ---
 
-## 🗃️ Banco de dados utilizado
+## Banco de dados utilizado
 
 O banco utilizado foi o:
 
@@ -35,7 +35,7 @@ O banco utilizado foi o:
 
 Importado em um ambiente SQL (MySQL/PostgreSQL + DBeaver ou similar).
 
-### 📊 Contexto do dataset
+### Contexto do dataset
 
 Esse dataset representa dados reais de um e-commerce brasileiro e contém informações como:
 
@@ -46,7 +46,7 @@ Esse dataset representa dados reais de um e-commerce brasileiro e contém inform
 - avaliações (`reviews`)  
 - vendedores (`sellers`)  
 
-### 🎯 Por que esse dataset?
+### Por que esse dataset?
 
 Ele foi escolhido porque:
 - simula um cenário real de mercado  
@@ -55,7 +55,7 @@ Ele foi escolhido porque:
 
 ---
 
-## 🧠 Conceitos importantes
+## Conceitos importantes
 
 ### 🔹 SELECT
 
@@ -84,7 +84,7 @@ O símbolo `*` indica que queremos todas as colunas da tabela.
 
 ---
 
-## ⚙️ Passo a passo da prática
+##  Passo a passo da prática
 
 ### 1. Instalação do ambiente
 - Instalação do banco de dados (MySQL ou PostgreSQL)  
@@ -111,7 +111,7 @@ Análise inicial para entender:
 
 ---
 
-## 💻 Prática
+##  Prática
 
 ### 🔹 Query 1 — Visualização geral da tabela de clientes
 
@@ -119,7 +119,7 @@ Análise inicial para entender:
 SELECT * FROM customers;
 ``` 
 
-### 📖 Explicação linha por linha:
+### Explicação linha por linha:
 
 - `SELECT *` → seleciona todas as colunas da tabela  
 - `FROM customers` → indica que os dados vêm da tabela `customers`  
@@ -136,7 +136,7 @@ A consulta retorna **todos os registros da tabela de clientes**, permitindo:
 - entender a estrutura da tabela  
 ---
 
-## 📈 Classificação das variáveis
+## Classificação das variáveis
 
 A tabela `olist_products_dataset` apresenta diferentes tipos de variáveis, que podem ser classificadas em:
 
