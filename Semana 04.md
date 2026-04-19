@@ -1,6 +1,4 @@
-# Panda-sql
-
-## Semana 04
+# Semana 04
 
 O `UPPER`, `LOWER`, `CONCAT`, `SUBSTR` e `LENGTH` são funções muito utilizadas no SQL para manipulação de textos.
 O `UPPER` converte todos os caracteres de uma string para maiúsculas,
