@@ -1,4 +1,4 @@
-# Semana 04
+# Semana 04 – Funções de String, Data e Matemática
 
 O `UPPER`, `LOWER`, `CONCAT`, `SUBSTR` e `LENGTH` são funções muito utilizadas no SQL para manipulação de textos.
 O `UPPER` converte todos os caracteres de uma string para maiúsculas,
