@@ -18,7 +18,7 @@
 ## Conceito de Chave Primária e de Chave Secundária
 As chaves garantem a integridade dos dados e são os "ganchos" utilizados para conectar as tabelas através dos JOINS.
 
-![Tabelas mostrando a relação entre Primary Key e Foreign Key](imagens/Imagem/Semana%206/primary_and_foreign_key.png)
+![Tabelas mostrando a relação entre Primary Key e Foreign Key](Imagem/Semana%206/primary_and_foreign_key.png)
 
 ### Chave Primária (Primary Key - PK)
 * Uma Chave Primária é uma coluna (ou um conjunto de colunas) que identifica de forma única cada registro dentro de uma tabela.
@@ -56,7 +56,7 @@ Os comandos JOIN de forma geral são utilizados para combinar linhas de duas ou 
 * Se um registro da Tabela A não tiver um par correspondente na Tabela B, ele é simplesmente descartado do resultado final.
 * Matematicamente, pense nisso como a interseção de dois conjuntos.
 
-![Diagrama de Venn ilustrando um INNER JOIN](imagens/Imagem/Semana%206/inner_join.png)
+![Diagrama de Venn ilustrando um INNER JOIN](Imagem/Semana%206/inner_join.png)
 
 #### Sintaxe Básica:
 ```sql
@@ -70,7 +70,7 @@ INNER JOIN tabela_B
 * O LEFT JOIN foca em trazer a totalidade dos dados de um lado do cruzamento. Ele retorna todos os registros da tabela "da esquerda" (que é a primeira tabela mencionada após o comando FROM), e apenas os registros que corresponderem da tabela "da direita".
 * Se houver um registro na tabela da esquerda que não encontre nenhum par correspondente na tabela da direita, a consulta não o descarta; em vez disso, o resultado mostrará NULL (nulo) para todas as colunas que viriam da tabela da direita.
 
-![Diagrama de Venn ilustrando um LEFT JOIN](imagens/Imagem/Semana%206/left_join.png)
+![Diagrama de Venn ilustrando um LEFT JOIN](Imagem/Semana%206/left_join.png)
 
 #### Sintaxe Básica:
 ```sql
