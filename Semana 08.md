@@ -32,6 +32,31 @@ Trabalhamos com diferentes tipos de subconsultas:
 
 ## Prática Realizada
 
+### Setup inicial
+**Passo a passo:**
+- Os códigos e testes foram feitos no google colab
+1. Instalar a biblioteca pandasql
+2. Importar as bibliotecas necessárias
+3. Definir o caminho do dataset
+4. Carregar as tabelas que serão utilizadas
+
+```sql
+!pip install pandasql -q
+import pandas as pd
+import pandasql as ps
+import kagglehub
+
+base_path = kagglehub.dataset_download("olistbr/brazilian-ecommerce")
+
+# Carregando as tabelas necessárias
+df_orders      = pd.read_csv(base_path + "/olist_orders_dataset.csv")
+df_order_items = pd.read_csv(base_path + "/olist_order_items_dataset.csv")
+df_payments    = pd.read_csv(base_path + "/olist_order_payments_dataset.csv")
+df_products    = pd.read_csv(base_path + "/olist_products_dataset.csv")
+df_translation = pd.read_csv(base_path + "/product_category_name_translation.csv")
+```
+
+
 Utilizando o dataset da Olist, foram desenvolvidas as seguintes análises:
 
 ### 1. Encontrar pedidos com valor acima da média de pagamentos
