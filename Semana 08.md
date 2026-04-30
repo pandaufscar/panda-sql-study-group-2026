@@ -87,6 +87,11 @@ ORDER BY total_vendas_reais DESC
 LIMIT 15
 ```
 
+**Observações:**
+- Utilizamos CTE (Common Table Expression) para organizar melhor a consulta.
+- A porcentagem foi calculada usando a função de janela SUM() OVER().
+- Fizemos o agrupamento primeiro e o JOIN com a tabela de categorias depois, para melhorar a performance da consulta.
+
 ### 3. Usar uma subconsulta como tabela temporária para analisar pedidos ou pagamentos (CTE)
 
 **Objetivo:**  
@@ -118,3 +123,12 @@ FROM pedidos_acima_media
 WHERE valor_total_pedido > media_pedidos
 ORDER BY valor_total_pedido DESC
 LIMIT 15
+```
+
+**Explicação da consulta:**
+- Utilizamos duas CTEs (valor_total_pedido e pedidos_acima_media) para tornar o código mais legível e modular.
+- A primeira CTE calcula o valor total pago em cada pedido (agregando a tabela de pagamentos).
+- A segunda CTE calcula a média geral dos pedidos usando a função de janela AVG() OVER().
+- Por fim, filtramos apenas os pedidos que estão acima da média.
+
+**Este tipo de estrutura (CTE) é muito utilizada em análise de dados porque facilita a manutenção, melhora a legibilidade e permite construir consultas complexas de forma organizada.**
