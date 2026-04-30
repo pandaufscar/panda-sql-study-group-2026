@@ -92,6 +92,7 @@ LIMIT 15
 - A porcentagem foi calculada usando a função de janela SUM() OVER().
 - Fizemos o agrupamento primeiro e o JOIN com a tabela de categorias depois, para melhorar a performance da consulta.
 
+
 ### 3. Usar uma subconsulta como tabela temporária para analisar pedidos ou pagamentos (CTE)
 
 **Objetivo:**  
