@@ -1,6 +1,6 @@
 # Semana 10 – Criação e Alteração de Estruturas (DDL)
 
-## Explicação da semana
+## Sobre a semana 10
 
 Nesta semana, o objetivo foi trabalhar com comandos de **DDL (Data Definition Language)**, ou seja, comandos utilizados para criar, alterar e remover estruturas dentro de um banco de dados.
 
@@ -37,13 +37,11 @@ A modelagem criada nesta prática não reproduz todas as tabelas originais do da
 
 ## Modelo proposto
 
-A estrutura criada representa um sistema simples de e-commerce:
+A estrutura criada representa um sistema simples de comércio eletrônico:
 
 - um cliente pode estar relacionado a pedidos;
 - um produto pode aparecer em pedidos;
 - a tabela de pedidos funciona como ligação entre clientes e produtos.
-
-![Estrutura das tabelas criadas](Imagem/Semana%2010/01_estrutura_tabelas.png)
 
 ---
 
@@ -240,23 +238,30 @@ WHERE type = 'table';
 
 ## Resultado da execução
 
-Após executar o código no SQLite, foram criadas as tabelas:
+Após executar o código no SQLite, foram criadas as seguintes tabelas:
 
-- `clientes_tarefa`
-- `produtos_tarefa`
-- `pedidos_tarefa`
+| name |
+|---|
+| `sqlite_sequence` |
+| `clientes_tarefa` |
+| `produtos_tarefa` |
+| `pedidos_tarefa` |
 
-Também apareceu a tabela `sqlite_sequence`, criada automaticamente pelo SQLite por causa do uso de `AUTOINCREMENT`.
-
-![Resultado da consulta no SQLite](Imagem/Semana%2010/02_resultado_sqlite_master.png)
+A tabela `sqlite_sequence` foi criada automaticamente pelo SQLite por causa do uso de `AUTOINCREMENT` na tabela `pedidos_tarefa`.
 
 ---
 
-## Verificação no SQLite Explorer
+## Verificação da prática
 
-No SQLite Explorer do Visual Studio Code, foi possível verificar que as tabelas criadas aparecem dentro do banco `brazilian_ecommerce.db`.
+A execução da consulta abaixo confirmou que as tabelas foram criadas no banco:
 
-![Tabelas no SQLite Explorer](Imagem/Semana%2010/03_sqlite_explorer_tabelas.png)
+```sql
+SELECT name
+FROM sqlite_master
+WHERE type = 'table';
+```
+
+O resultado retornou as tabelas `clientes_tarefa`, `produtos_tarefa` e `pedidos_tarefa`, confirmando que a estrutura foi criada corretamente.
 
 ---
 
@@ -268,4 +273,4 @@ Foram criadas tabelas para clientes, produtos e pedidos, com definição de chav
 
 Além disso, o comando `ALTER TABLE` foi utilizado para adicionar colunas em tabelas existentes, e o comando `DROP TABLE` foi utilizado para excluir uma tabela de teste.
 
-Dessa forma, a atividade demonstrou como estruturar um banco de dados relacional simples inspirado em um cenário real de e-commerce.
+Dessa forma, a atividade demonstrou como estruturar um banco de dados relacional simples inspirado em um cenário real de comércio eletrônico.
